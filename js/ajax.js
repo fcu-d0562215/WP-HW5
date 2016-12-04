@@ -127,7 +127,7 @@ function _search(key) {
 
 function _getData() {
     $.ajax({
-        url: "data",
+        url: "http://140.134.26.71:58080/web-prog/Hotels",
         dataType: "json",
         success: function(response) {
             data = response.Infos.Info;
