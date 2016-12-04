@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+    .table-fixed {
+        height: 100%
+    }
+    
+    .table-fixed tbody {
+        overflow: auto;
+        width: 100%;
+    }
+    
+    .table-fixed thead,
+    .table-fixed tbody,
+    .table-fixed tr,
+    .table-fixed td,
+    .table-fixed th {
+        display: block;
+    }
+    
+    .table-fixed thead > tr> th {
+        border: 0;
+    }
+    
+    .table-fixed tbody td,
+    .table-fixed thead > tr> th {
+        float: left;
+    }
+    </style>
+</head>
+
+<body style="height: 100%;width: 100%;overflow: hidden;position: fixed;">
+    <div class="container-fluid show" style="height: 100%;padding: 0;">
+        <table class="table table-fixed">
+            <thead class="thead-inverse">
+                <tr>
+                    <th class="col-xs-12">
+                        <div class="col-md-2 push-md-10">
+                            <input type="text" onkeyup="_search(this.value)" placeholder="搜尋名字地址皆可">
+                        </div>
+                        <div class="col-md-10 pull-md-2"><a>住宿資料庫</a></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
